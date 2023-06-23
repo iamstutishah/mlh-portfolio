@@ -13,11 +13,16 @@ body {
 
 .nav-bar {
     width: 100%;
-    display: inline-block;
     background-color: #1C539F;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
     padding-top: 10px;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-content .logo-touch-target {
@@ -39,14 +44,25 @@ body {
 
 .nav-logo img {
     width: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
 .nav-content nav {
-    display: block;
     width: 100%;
     text-align: right;
     padding-top: 0px;
     padding-right: 0px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .profile {
