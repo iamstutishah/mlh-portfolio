@@ -1,14 +1,26 @@
-<header class="nav-bar">
-    <div class="nav-content">
-        <a href="/">
-            <div class="nav-logo">
-                <img src="./static/img/logo.svg" />
-            </div>
+<nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+            <img src="./static/img/logo.svg" width="200">
         </a>
-        <div class="nav-menu">
-            <a href="/">Index</a>
-            <a href="/experiences">Experiences</a>
-            <a href="/hobbies">Hobbies</a>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" id="navbarToggler">
+            <i class="fas fa-bars" style="color: #fff; font-size: 28px;"></i>
+        </button>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/"><i class="fas fa-home"></i> Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experiences"><i class="fas fa-briefcase"></i> Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/hobbies"><i class="fas fa-gamepad"></i> Hobbies</a>
+                </li>
+            </ul>
         </div>
     </div>
-</header>
+</nav>
