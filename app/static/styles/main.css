@@ -79,12 +79,12 @@ body {
 
 .work-experience {
     background-color: #e0e0e0;
-    height: 400px; 
+    height: 450px; 
     margin-top: -25px;
     
 }
 .work-title {
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     font-size: 30px;
     color: #1C539F;
@@ -99,6 +99,13 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 }
+.work-card h3, i, p{
+    text-align: center;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
@@ -126,3 +133,11 @@ body {
     align-self: stretch;
     justify-content: space-around; 
 }
+
+.vstack {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+  }
