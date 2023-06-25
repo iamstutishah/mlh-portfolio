@@ -18,9 +18,13 @@
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <script src="https://kit.fontawesome.com/9833e7d7ec.js" crossorigin="anonymous"></script>
     <title>{{ title }}</title>
+
+    {% block head %}{% endblock %}
+
 </head>
 
 <body>
+    {% block body %}
     <header class="nav-bar">
         <div class="nav-content">
             <a href="/">
@@ -38,38 +42,8 @@
         <h1>{{ title }}</h1>
     </div>
 
-    <div class="work-experience">
-        <h1 class="work-title">Work Experience</h1>
-        <div class="hstack">
-            <div class="work-card">
-                <div class="vstack">
-                    <h3>Work Experience 1</h3>
-                    <i class="fa-solid fa-briefcase fa-2xl center"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="work-card">
-                <div class="vstack">
-                    <h3>Work Experience 2</h3>
-                    <i class="fa-solid fa-briefcase fa-2xl center"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="work-card">
-                <div class="vstack">
-                    <h3>Work Experience 3</h3>
-                    <i class="fa-solid fa-briefcase fa-2xl center"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="work-card">
-                <div class="vstack">
-                    <h3>Work Experience 4</h3>
-                    <i class="fa-solid fa-briefcase fa-2xl center"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include 'work.html' %}
+
+    {% endblock %}
 </body>
 </html>

@@ -1,0 +1,16 @@
+<div class="work-experience">
+    <h1 class="work-title">My Work and Leadership Experience</h1>
+    <div class="hstack">
+        {% for experience in workExperience %}
+        <div class="work-card">
+            <div class="vstack">
+                <h3>{{experience.title}}</h3>
+                <i class="fa-solid fa-briefcase fa-2xl center"></i>
+                <h4>{{experience.date}}</h4>
+                <p>{{experience.description}}</p>
+                
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
