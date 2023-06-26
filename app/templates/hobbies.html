@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/hobbies.css') }}">
+    <title>{{ title }}</title>
+    <meta property="og:url" content="{{ url }}">
+{% endblock %}
+
+{% block content %}
+    {{ super() }}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>{{ title }}</h1>
+                <div class="card">
+                    <div class="card-header" id="hobbiesHeader">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            {% for hobby in hobbiesList %}
+                                <li class="nav-item">
+                                    <a class="nav-link {% if hobby == hobbiesList[0] %}active{% endif %}" href="#{{ hobby["title"] }}">{{ hobby["title"] }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="card-body" id="hobbiesBody">
+                        {% for hobby in hobbiesList %}
+                            <div class="hobby" id="{{ hobby["title"] }}">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/'+hobby["image"]) }}">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <h3>{{ hobby["title"] }}</h3>
+                                        <p>{{ hobby["description"] }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $(document).ready(function () {
+            {% for hobby in hobbiesList %}
+                $("#{{ hobby["title"] }}").hide();
+            {% endfor %}
+            $("#{{ hobbiesList[0]["title"] }}").show();
+            $(".nav-link").click(function () {
+                $(".nav-link").removeClass("active");
+                $(this).addClass("active");
+                {% for hobby in hobbiesList %}
+                    $("#{{ hobby["title"] }}").hide();
+                {% endfor %}
+                $("#"+$(this).text()).show();
+            });
+        });
+    </script>
+{% endblock %}
+

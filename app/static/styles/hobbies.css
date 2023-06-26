@@ -1,0 +1,28 @@
+h1 {
+    color: #1C539F;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+}
+
+#hobbiesHeader {
+    background-color: #1C539F;
+    
+}
+
+.active {
+    color: #1C539F !important;
+    font-weight: 650 !important;
+}
+
+.nav-link {
+    color: #FFF;
+    font-weight: 650;
+}
