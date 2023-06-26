@@ -1,6 +1,9 @@
+headerInfo = {
+    "name": "Stuti",
+}
 workExperience = [
         {
-            "title": "Research Intern @ Eyenuk, Inc.",
+            "title": "Research and Development Intern @ Eyenuk, Inc.",
             "description": "Assisted leading scientists in improving AI algorithms for Diabetic Retinopathy detection by accurately annotating 20+ retinal images and analyzing biomarkers.",
             "date": "Jun 2021 - Sep 2021"
         },
