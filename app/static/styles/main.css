@@ -113,6 +113,11 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.work-card:hover {
+    opacity: 0.8;
 }
 
 .work-card h4 {
