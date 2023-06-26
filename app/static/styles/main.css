@@ -1,20 +1,20 @@
 p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Roboto", serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: #f5f5f9;
+    background-color: #1C5399;
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
-    font-family: "Roboto", serif;
+    font-family: "Poppins", sans-serif;
     margin: 0px;
 }
 
 #navbar {
     width: 100%;
     background-color: #1C539F;
-    font-family: "Roboto", serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700 !important;
     padding-top: 10px;
 }
@@ -31,31 +31,33 @@ body {
 }
 
 #navbarSupportedContent .nav-link {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 5px 0px 10px;
     color: #fff;
+    font-weight: 300;
 }
 
 .profile {
     background-color: #1d539f !important;
     text-align: center;
-    height: 320px;
+    height: 370px;
     
 }
 
 .profile h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: white;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
 }
 
 .profile img {
-        border-radius: 100%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;        
-        padding: 20px;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    padding: 10px;
 }
 
 .profile .profile-picture {
@@ -63,34 +65,84 @@ body {
     height: 200px;
 }
 
+.typewriter {
+    place-items: center;
+}
+
+.typewriter h1 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 5px solid #FFC55B;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+    max-width: fit-content;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
 .work-experience {
-    background-color: #e0e0e0;
-    height: 450px; 
+    background-color: #FFF;
+    height: 550px; 
     margin-top: -25px;
     
 }
 .work-title {
     padding: 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 600;
     color: #1C539F;
 }
 
 .work-card {
     border-radius: 44px;
-    background: #FFF;
-    box-shadow: 20px 20px 50px 0px rgba(7, 54, 82, 0.08);
-    width: 300px;
-    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 50px 50px rgba(7, 54, 82, 0.08);
+    width: 350px;
+    height: 320px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    
-}
-.work-card h3, i, p{
     text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.work-card:hover {
+    opacity: 0.8;
+}
+
+.work-card h4 {
+    padding-top: 25px;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.work-card i {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.work-card h5 {
+    padding-top: 10px;;
+    font-size: 15px; 
+}
+.work-card p{
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
+    font-weight: 200;
 }
 
 .banner {
