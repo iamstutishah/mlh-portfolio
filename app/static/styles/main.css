@@ -39,7 +39,7 @@ body {
     background-color: #1d539f !important;
     text-align: center;
     height: 320px;
-    margin-bottom: 50px;
+    
 }
 
 .profile h1 {
@@ -49,7 +49,7 @@ body {
 }
 
 .profile img {
-        border-radius: 50%;
+        border-radius: 100%;
         max-width: 100%;
         max-height: 100%;
         margin-left: auto;
@@ -61,6 +61,36 @@ body {
 .profile .profile-picture {
     margin-bottom: 30px;
     height: 200px;
+}
+
+.work-experience {
+    background-color: #e0e0e0;
+    height: 450px; 
+    margin-top: -25px;
+    
+}
+.work-title {
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #1C539F;
+}
+
+.work-card {
+    border-radius: 44px;
+    background: #FFF;
+    box-shadow: 20px 20px 50px 0px rgba(7, 54, 82, 0.08);
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.work-card h3, i, p{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 .banner {
@@ -80,4 +110,22 @@ body {
     color: white;
     font-size: 50px;
     font-weight: 700;
+}
+
+.hstack {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-around; 
+}
+
+.vstack {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-around;
 }
