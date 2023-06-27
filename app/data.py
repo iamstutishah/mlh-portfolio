@@ -20,3 +20,17 @@ workExperience = [
         }
     ]
 
+
+hobbiesList = [
+    {
+        "title": "Music",
+        "description": "I like to listen to music and enjoy looking for new artists to listen to.",
+        "image": "music.png"
+    },
+    {
+        "title": "Sports",
+        "description": "I like to play sports and watch them. My favorite sports are soccer and basketball.",
+        "image": "sports.jpg"
+    }
+]
+
