@@ -282,3 +282,11 @@ body {
     align-self: stretch;
     justify-content: space-around;
 }
+
+#places-title {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #1C539F;
+}
