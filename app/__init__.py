@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), headerInfo=headerInfo, workExperience=workExperience)
+    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), headerInfo=headerInfo, workExperience=workExperience, GOOGLE_MAPS_API=os.getenv("GOOGLE_MAPS_API"))
 
 
 @app.route('/hobbies')
