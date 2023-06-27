@@ -17,14 +17,14 @@
                         <ul class="nav nav-tabs card-header-tabs">
                             {% for hobby in hobbiesList %}
                                 <li class="nav-item">
-                                    <a class="nav-link {% if hobby == hobbiesList[0] %}active{% endif %}" href="#{{ hobby["title"] }}">{{ hobby["title"] }}</a>
+                                    <a class="nav-link {% if hobby == hobbiesList[0] %}active{% endif %} hobbie-link" href="#{{ hobby["title"] }}">{{ hobby["title"] }}</a>
                                 </li>
                             {% endfor %}
                         </ul>
                     </div>
                     <div class="card-body" id="hobbiesBody">
                         {% for hobby in hobbiesList %}
-                            <div class="hobby" id="{{ hobby["title"] }}">
+                            <div class="hobby" id="{{ hobby["title"] }}" style="display: none;">
                                 <div class="row">
                                     <div class="col-lg-3">
                                         <img class="img-fluid" src="{{ url_for('static', filename='img/'+hobby["image"]) }}">
@@ -38,8 +38,6 @@
                         {% endfor %}
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -50,12 +48,9 @@
     {{ super() }}
     <script>
         $(document).ready(function () {
-            {% for hobby in hobbiesList %}
-                $("#{{ hobby["title"] }}").hide();
-            {% endfor %}
             $("#{{ hobbiesList[0]["title"] }}").show();
-            $(".nav-link").click(function () {
-                $(".nav-link").removeClass("active");
+            $(".hobbie-link").click(function () {
+                $(".hobbie-link").removeClass("active");
                 $(this).addClass("active");
                 {% for hobby in hobbiesList %}
                     $("#{{ hobby["title"] }}").hide();
