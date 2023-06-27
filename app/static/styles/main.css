@@ -129,11 +129,11 @@ body {
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 20px 20px 50px 50px rgba(7, 54, 82, 0.05);
-    width: 350px;
+    width: 320px;
     height: 320px;
     margin-top: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
     transition: opacity 0.3s ease-in-out; 
 }
