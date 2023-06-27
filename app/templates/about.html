@@ -1,0 +1,37 @@
+<div class="about-me">
+    <div class="hstack">
+        <div class="about-me-card">
+            <div class="vstack">
+                <h1 class="about-title">About Me</h1>
+                <p class="about-me-description">{{aboutMe.description}}</p>
+                <div class="hstack">
+                <a class="button" type="button" href="mailto:">
+                    Contact
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
+                <a class="button" type="button" href="https://drive.google.com" target="_blank">
+                    Resume
+                    <i class="fas fa-file-lines"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="education-box">
+            <h1 class="education-title">My Education</h1>
+            <div class="hstack">
+                {% for school in education %}
+                <div class="education-card">
+                    <div class="vstack">
+                        <h4>{{school.name}}</h1>
+                        <h5>{{school.date}}</h3>
+                        <p>{{school.major}}</p>
+                        <img class="image" src="{{ url_for('static', filename='img/'+school["image"]) }}">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</div>
