@@ -1,6 +1,6 @@
 <div class="about-me">
-    <div class="hstack">
-        <div class="about-me-card">
+    <div class="row hstack">
+        <div class="about-me-card col-lg-6">
             <div class="vstack">
                 <h1 class="about-title">About Me</h1>
                 <p class="about-me-description">{{aboutMe.description}}</p>
@@ -16,7 +16,7 @@
             </div>
             </div>
         </div>
-        <div class="education-box">
+        <div class="education-box col-lg-6">
             <h1 class="education-title">My Education</h1>
             <div class="hstack">
                 {% for school in education %}

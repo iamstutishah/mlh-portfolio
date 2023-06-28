@@ -135,6 +135,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
+    align-items: center;
     transition: opacity 0.3s ease-in-out; 
 }
 
@@ -191,7 +192,6 @@ body {
 
 .work-experience {
     background-color: #FFF;
-    height: 575px; 
     margin-top: -25px;
     
 }
@@ -211,9 +211,10 @@ body {
     width: 350px;
     height: 320px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: center;
+    align-items: center;
     transition: opacity 0.3s ease-in-out;
 }
 
