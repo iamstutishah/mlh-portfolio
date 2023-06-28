@@ -1,6 +1,26 @@
 headerInfo = {
     "name": "Stuti",
 }
+
+aboutMe = {
+    "description": "Hey there! My name is Stuti and I'm a student at the University of Minnesota-Twin Cities, studying computer science.\n I'm interested in technology and programming, and I hope to one day become a software engineer.\n I've had a lot of success in my studies and have also gained some practical experience through internships and hackathons."
+}
+
+education = [
+    {
+        "name": "University of Minnesota Twin Cities",
+        "date": "Sept 2022 - May 2025",
+        "major": "Computer Science",
+        "image": "umn_logo.jpg"
+    }, 
+    {
+        "name": "De Anza College",
+        "date": "Jun 2020 - Jul 2022",
+        "major": "Highschool Dual Enrollment",
+        "image": "de_anza.jpg"
+    }
+]
+
 workExperience = [
         {
             "title": "Research and Development Intern @ Eyenuk, Inc.",
@@ -19,7 +39,6 @@ workExperience = [
 
         }
     ]
-
 
 hobbiesList = [
     {
