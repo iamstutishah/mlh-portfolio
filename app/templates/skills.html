@@ -1,0 +1,12 @@
+<div id="skills" class="skills-box">
+    <div class="skills">
+        <h1 class="skills-title">My Skills</h1>
+        <div class="hstack">
+            {% for skill in skills %}
+            <div class="skill-card" data-aos="fade-in">
+                <img class="image-fluid" src="{{ url_for('static', filename='img/'+skill["img"]) }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

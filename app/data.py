@@ -53,3 +53,39 @@ hobbiesList = [
     }
 ]
 
+skills = [
+    {
+        "title": "Python",
+        "img" : "python.png"
+    },
+    {
+        "title": "Java",
+        "img" : "java.png"
+    },
+    {
+        "title": "C++",
+        "img" : "c++.png"
+    },
+    {
+        "title": "HTML",
+        "img" : "html.png"
+    },
+    {
+        "title": "Typescript",
+        "img" : "typescript.png"
+    },
+    {
+        "title": "React",
+        "img" : "react.png"
+    },
+    {
+        "title": "Firebase",
+        "img" : "firebase.png"
+    },
+    {
+        "title": "MySQL",
+        "img" : "mysql.png"
+    },
+
+]
+

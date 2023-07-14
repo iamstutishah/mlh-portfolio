@@ -1,14 +1,14 @@
 import os
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
-from app.data import workExperience, headerInfo, hobbiesList, aboutMe, education
+from app.data import workExperience, headerInfo, hobbiesList, aboutMe, education, skills
 from peewee import *
 import datetime
 from playhouse.shortcuts import model_to_dict
 
 load_dotenv()
 app = Flask(__name__)
-
+'''
 # Database
 mydb = MySQLDatabase(
     os.getenv("MYSQL_DATABASE"),
@@ -31,17 +31,19 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 
 print(mydb)
+'''
 
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), headerInfo=headerInfo, aboutMe=aboutMe, education=education, workExperience=workExperience, GOOGLE_MAPS_API=os.getenv("GOOGLE_MAPS_API"))
+    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), headerInfo=headerInfo, aboutMe=aboutMe, education=education, workExperience=workExperience, skills=skills)
 
 
 @app.route('/hobbies')
 def hobbies():
     return render_template('hobbies.html', title="Hobbies", url=os.getenv("URL"), hobbiesList=hobbiesList)
 
+'''
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
     name = request.form['name']
@@ -59,3 +61,11 @@ def get_time_line_post():
             for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
+
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html', title="Timeline", url=os.getenv("URL"))
+
+'''
+
+

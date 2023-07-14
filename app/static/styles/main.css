@@ -95,7 +95,7 @@ body {
     background: #fff;
     width: 50%;
     height: auto;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
 }
 
 .about-me-description {
@@ -128,7 +128,7 @@ body {
 .education-card {
     border-radius: 20px;
     background-color: #fff;
-    box-shadow: 20px 20px 50px 50px rgba(7, 54, 82, 0.05);
+    box-shadow: 10px 20px 50px 50px rgba(7, 50, 72, 0.04);
     width: 320px;
     height: 320px;
     margin-top: 10px;
@@ -153,10 +153,7 @@ body {
     font-size: 18px; 
 }
 .education-card p{
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+    padding: 10px 20px;
     font-weight: 300;
 }
 
@@ -193,6 +190,7 @@ body {
 .work-experience {
     background-color: #FFF;
     margin-top: -25px;
+    padding-bottom: 80px;
     
 }
 .work-title {
@@ -245,6 +243,42 @@ body {
     padding-right: 20px;
     padding-bottom: 10px;
     font-weight: 200;
+}
+
+.skills-box {
+    background-color: #fff;
+    margin-top: -25px;
+    padding-bottom: 80px;
+}
+
+.skills-title {
+    padding: 30px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #1C539F;
+}
+
+.skill-card {
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 50px 50px rgba(7, 54, 82, 0.05);
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-fluid {
+    padding-top: 10px;
+    width: 80px;
+    height: 90px;
+
 }
 
 .banner {

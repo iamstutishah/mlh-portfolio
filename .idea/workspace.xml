@@ -10,6 +10,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -20,6 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/stuti/Developer/mlh-portfolio",
@@ -47,7 +55,7 @@
       <updated>1688748079493</updated>
       <workItem from="1688748082443" duration="88000" />
       <workItem from="1688748184871" duration="1103000" />
-      <workItem from="1689281580362" duration="3021000" />
+      <workItem from="1689281580362" duration="15679000" />
     </task>
     <servers />
   </component>

@@ -17,15 +17,14 @@
     </div>
     
     {% include 'about.html' %}
+    {% include 'skills.html' %}
     {% include 'work.html' %}
 
-    {% include 'places.html' %}
 
 {% endblock %}
 
 {% block scripts %}
     {{ super() }}
-    <script type="text/javascript" src="{{ url_for('static', filename='js/places.js')}}"></script>
     <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key={{GOOGLE_MAPS_API}}&callback=initMap">
     </script>
