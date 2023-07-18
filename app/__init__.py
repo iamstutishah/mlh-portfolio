@@ -8,7 +8,7 @@ from playhouse.shortcuts import model_to_dict
 
 load_dotenv()
 app = Flask(__name__)
-'''
+
 # Database
 mydb = MySQLDatabase(
     os.getenv("MYSQL_DATABASE"),
@@ -31,7 +31,7 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 
 print(mydb)
-'''
+
 
 
 @app.route('/')
@@ -43,7 +43,7 @@ def index():
 def hobbies():
     return render_template('hobbies.html', title="Hobbies", url=os.getenv("URL"), hobbiesList=hobbiesList)
 
-'''
+
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
     name = request.form['name']
@@ -66,6 +66,6 @@ def get_time_line_post():
 def timeline():
     return render_template('timeline.html', title="Timeline", url=os.getenv("URL"))
 
-'''
+
 
 
