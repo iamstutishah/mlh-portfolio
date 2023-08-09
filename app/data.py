@@ -10,7 +10,7 @@ education = [
     {
         "name": "University of Minnesota Twin Cities",
         "date": "Sept 2022 - May 2025",
-        "major": "Computer Science",
+        "major": "Computer Science and Statistics",
         "image": "umn_logo.jpg"
     }, 
     {
